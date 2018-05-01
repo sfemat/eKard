@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>eKard - Generate electronic cards now!</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+	<script src="js/html2canvas.js"></script>
+	<script src="js/html2canvas.min.js"></script>
+  </head>
+
+  <body>
+    <h1 style="text-align: center; color: blue; font-size: 50px;">eKard</h1>
+    <h3 style="text-align: center; color: green; font-family: Arial;">Electronic card generator</h3>
+	
+	
+	
+	<!--
+		Div containing text fields and buttons that modify the card + a menu
+	-->
+    <div id="new">
+		<!--
+			Buttons menu
+		-->
+		<button id="newbtn" class=bello >New</button><button id="save" class=bello style="background-color:green; " >Save</button><button id="mostra" class=bello type="button" onclick="ante()" style="background-color: grey;">Hide</button>
+		<br>
+		<br>
+		<br>
+		<h2 style="color: #18ffff" >Customize your eKard</h2>
+		<!--
+			Text fields for message and custom background from URL
+		-->
+		<textarea style="width:98.7%; border-radius: 10px;" id="message"  rows=7 cols=20 placeholder="Write here the message" onkeyup="load_text()"  onchange="load_text()" ></textarea><br>
+		<input style="width:99.2%; border-radius: 7px;" type="text" id="urli" size="25" placeholder="Image URL(optional)" onchange="load_text()" onkeyup="load_text(); load_image(this.value)"><br>
+		<br>
+		
+		<!--
+			Separate div that just contains modify buttons
+		-->
+		<div id="attributes" class="wrapper">
+
+
+			<button class="belbuton" style="color: red; background-color: #ffd27f;" onclick="ico(1)">Natale</button>
+			<button class="belbuton" style="color: white; background-color: #4CAF50;" onclick="ico(2)">Pasqua</button>
+			<button class="belbuton" style="color: brown; background-color: #ffe1e1" onclick="ico(3)">Laurea</button>
+
+			<br><br><br>
+	
+			<button class="belbuton" style="background-color: #005c99;" onclick="bac(1);">&#160;&#160;&#160;</button>
+			<button class="belbuton" style="background-color: #66b266;" onclick="bac(2);">&#160;&#160;&#160;</button>
+			<button class="belbuton" style="background-color: #f25e5e;" onclick="bac(3);">&#160;&#160;&#160;</button>
+			<button class="belbuton" style="background-color: #631e50;" onclick="bac(4);">&#160;&#160;&#160;</button>
+			<button class="belbuton" style="background-color: #9bd32f;" onclick="bac(5);">&#160;&#160;&#160;</button>
+			<button class="belbuton" style="background-color: #009f94;" onclick="bac(6);">&#160;&#160;&#160;</button>
+	
+		</div>
+	
+		<br>
+		<br>
+    </div>
+	<br>
+	<hr>
+	<br>
+	<div id="antebox">
+      <h2 style="color: #004d40">Eccola!</h2>
+	  <!--
+		Div that contains real time preview of the card
+	  -->
+      <div  id="cardbox" style="text-align: center;">
+		
+         
+            <img id="img" src="img/tra.png" alt="Cartolina"><br>
+            <p id="msg">&#160;</p>
+          
+        
+      </div>
+	  
+	  <br>
+	  <!--
+		Div that shows the image of the card taken from the "cardbox" div
+	  -->
+	  <div id="ris" class=save></div>
+	  
+	</div>
+	
+	<footer style="text-align: center">
+      <hr>
+	  <img src="http://www.w3.org/Icons/valid-html401.png" alt="Validated">
+      <p>sfemat</p>
+    </footer>
+	
+  </body>
+</html>

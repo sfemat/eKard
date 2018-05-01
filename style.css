@@ -1,0 +1,112 @@
+body {
+  background-image: url("img/bg.jpg");
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  z-index: 0;
+  left:25vw;
+}
+html {
+    display: table;
+    margin: auto;
+}
+#new {
+  background-color: #212121;
+   margin: 0 auto;
+   border-style: inset;
+   border-color: coral;
+   border-width: 7px;
+   padding: 10px;
+}
+#card_image {
+  margin: 25px;
+  width: 40vw;
+}
+#cardbox {
+  text-align: center;
+  border-style: inset;
+  border-color: coral;
+  border-width: 7px;
+  width: 25vw;
+  margin-top: 5px;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 200%;
+  color: #fff;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+#attributes {
+	background-color: #0080ff;
+	width: 80%;
+	margin: auto;
+	padding: 10px;
+	border-style: groove;
+    border-color: green;
+    border-width: 7px;
+}
+footer {
+  margin: 15px 0 15px 0;
+}
+
+textarea {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+}
+textarea:focus{
+	background-color: #1b5e20;
+}
+
+input[type=text]{
+	
+    color: white;
+	width: 100%;
+	background-color: #81d4fa;
+}
+input[type=text]:focus {
+    background-color: #0288d1;
+}
+.button {
+    position: relative;
+	left: 25%;
+	
+}
+#antebox {
+	
+  margin: 0 auto;
+  width: 90%;
+  border: 3px;
+  padding: 10px;
+	
+}
+#cardbox {
+	
+  margin: 0 auto;
+  width: 90%;
+  padding: 10px;
+	
+}
+.bello {
+	position: relative; 
+	padding: 10px 50px; 
+	color: yellow; 
+    background-color: brown; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+	position: relative; 
+	width: 33.3%;
+}
+.belbuton {
+    border: none;
+    padding: 7px 7.8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	position: relative;
+	left: 25%;
+	border-radius: 10px;
+}

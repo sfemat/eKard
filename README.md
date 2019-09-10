@@ -1,4 +1,3 @@
-<img src="http://i67.tinypic.com/w83orn.jpg">
 
 # eKard
 
